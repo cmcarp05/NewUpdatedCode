@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <!-- Link to your external CSS file using the <link> tag -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Comparing fuel prices</h1>
+    <!-- Button to go back to the main page -->
+    <a href="/" class="back-btn">Back to Main Page</a>
+
+    <!-- Description for the bar graph -->
+    <p>Explore the average annual fuel costs for different fuel types across various vehicles. The horizontal axis represents Fuel Type 1, including Premium Gasoline, Midgrade Gasoline, Natural Gas, Regular Gasoline, Diesel, and Electricity. The vertical axis represents the Average Annual Fuel Cost (in dollars), ranging from 0 to 2000+. Use this graph to compare the cost efficiency of different fuel types.</p>
+
+    <!-- Image tag to display the bar graph -->
+    <!-- Ensure that the 'img_str' variable is correctly passed to this template by Flask -->
+    <img src="data:image/png;base64,{{ img_str }}" alt="Bar Graph" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
+    
+    <!-- Your content for Page 1 goes here -->
+</body>
+</html>
+
