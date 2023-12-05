@@ -85,7 +85,7 @@ The application can be accessed through a web browser.
 
 - Use the search and filter options on the main page (`/`) to explore the data.
 - Download the fuel data in CSV format through the `/download-data` endpoint.
-- Navigate to the different pages (Page 1, Page 2, Page 3, Page 4) to visualize various aspects of fuel efficiency data.
+- Navigate to the different pages (Page 1, Page 2, Page 3, Page 4, Page 5) to visualize various aspects of fuel efficiency data.
 
 ### Error Handling and Email Notifications:
 
