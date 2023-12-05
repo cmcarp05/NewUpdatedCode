@@ -63,6 +63,13 @@ The Fuel Efficiency Data Analytics Platform is a web application designed to aut
 - Created a Plotly bar chart presenting the top 5 car makes with the lowest average annual fuel cost (Fuel Type 2).
 - The chart offers interactive features for a richer data exploration experience.
 
+  ### Page 5: Average Annual Fuel Cost by Year for FT1 and FT2
+
+- Developed a dynamic line chart on Page 5 (`/page5`) using Google Charts to display the average annual fuel cost over the years for Fuel Type 1 (FT1) and Fuel Type 2 (FT2).
+- The chart illustrates the historical trends of annual fuel costs, allowing users to hover over the lines to see exact values for any given year, all in USD.
+- This visualization provides insights into the changing costs of fuel over time and highlights the potential impact of technological advancements on fuel efficiency.
+- Users can navigate back to the main page using the "Back to Main Page" button.
+
 ### Troubleshooting and Debugging
 
 - Ensured that the Kaggle package was correctly installed and imported.
