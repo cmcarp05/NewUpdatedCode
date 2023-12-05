@@ -89,18 +89,25 @@ The application can be accessed through a web browser.
 
 ### Error Handling and Email Notifications:
 
-=Custom Error Handling: A custom error handler has been implemented for HTTP 500 Internal Server Errors in the Flask application. This error handler is designated using the @app.errorhandler(500) decorator.
+-Custom Error Handling: A custom error handler has been implemented for HTTP 500 Internal Server Errors in the Flask application. This error handler is designated using the @app.errorhandler(500) decorator.
+
 -Email Notifications: In the event of a 500 Internal Server Error, an email notification mechanism has been integrated. The purpose is to promptly notify designated recipients, ensuring that developers are informed when such an error occurs.
+
 -Message Composition: The error handling function constructs an email message using Flask-Mail. The message includes a subject, sender, recipients, and a body. The subject is set as "Internal Server Error," the sender's email address is specified, and the recipients' email addresses are configured to receive error notifications.
+
 -Error Details Inclusion: The error handler extracts pertinent error details from the error parameter and includes them in the email message body. This ensures that developers receive comprehensive information about the error, aiding in the debugging and resolution process.
+
 -Email Dispatch: The email message is dispatched using the mail.send(msg) method, leveraging the Flask-Mail extension's capabilities.
 User-Friendly Error Page: To enhance the user experience, a custom 500 error page is rendered using render_template. This page can provide a user-friendly error message to site visitors, improving overall usability.
 
 
 ### CSRF (Cross-Site Request Forgery) Protection:
 -CSRF Prevention: To bolster application security, CSRF protection has been implemented, guarding against Cross-Site Request Forgery attacks. This security measure is achieved through Flask-WTF, a Flask extension designed for CSRF protection.
+
 -FlaskForm Integration: FlaskForm from flask_wtf has been imported to create forms with built-in CSRF protection.
+
 -Secret Key Establishment: A secret key has been defined for the application using app.config['SECRET_KEY']. This secret key is pivotal for safeguarding session data, cookies, and CSRF tokens, fortifying the application's security.
+
 -CSRFProtect Initialization: CSRF protection is activated by initializing a CSRFProtect object, named csrf, and associating it with the Flask application using csrf.init_app(app).
 
 
